@@ -6,7 +6,7 @@ ARG JDK_VERSION
 ENV DEBIAN_FRONTEND noninteractive
 ENV DEBCONF_NONINTERACTIVE_SEEN true
 
-COPY setup /setup/
+COPY setup /setup
 
 # setup user, base packages, etc.
 RUN /setup/ubuntu.sh

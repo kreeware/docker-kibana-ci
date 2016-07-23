@@ -6,16 +6,16 @@ To build the images you will need to [install docker locally](https://www.docker
 
 ```sh
 # clone the registry
-git clone https://github.com/kreeware/docker-kibana-ci.git kibana-ci
-cd kibana-ci
+git clone https://github.com/kreeware/docker-kibanaci.git kibanaci
+cd kibanaci
 
 # build the image
 docker build \
-  --tag kibanaci/base:master \
+  --tag kibanaci/base:n447-j8-chrome \
   --build-arg NODE_VERSION=4.4.7 \
   --build-arg JDK_VERSION=8 \
   base
 
 # push the image to dockerhub
-docker push kibanaci/base:master
+docker push kibanaci/base:n447-j8-chrome
 ```
