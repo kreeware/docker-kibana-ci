@@ -11,11 +11,11 @@ cd kibanaci
 
 # build the image
 docker build \
-  --tag kibanaci/base:n447-j8-chrome \
+  --tag kibanaci/base-n447-j8-chrome \
   --build-arg NODE_VERSION=4.4.7 \
   --build-arg JDK_VERSION=8 \
   base
 
 # push the image to dockerhub
-docker push kibanaci/base:n447-j8-chrome
+docker push kibanaci/base-n447-j8-chrome
 ```
